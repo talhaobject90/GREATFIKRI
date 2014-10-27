@@ -1,7 +1,8 @@
+ECHO 'REPLACING SETTINGS FILE....'
+
+
 echo UPDATING DATABASE..................
-
-
-
-mysql -h 127.9.18.2 -P 3306 -u adminxEHGgZ3 --password="AtZzr53yunKd" great < /var/lib/openshift/543953795973ca3e770001b7/app-root/runtime/repo/great.sql
+mysql -h $OPENSHIFT_DB_HOST -P $OPENSHIFT_DB_PORT -u $OPENSHIFT_DB_USERNAME --password="$OPENSHIFT_DB_PASSWORD" great < /var/lib/openshift/543953795973ca3e770001b7/app-root/runtime/repo/great.sql
  
 echo DATABSE UPDATED !
+
