@@ -1,0 +1,18 @@
+
+echo Connecting to Great Fikri 
+ssh 543953795973ca3e770001b7@great-fikri.rhcloud.com
+
+if [ $? -eq 0 ]; then
+    echo CONNECTED !
+echo UPDATING DATABASE..................
+mysql -u adminxEHGgZ3 -pAtZzr53yunKd great < /var/lib/openshift/543953795973ca3e770001b7/app-root/runtime/repo/great.sql
+echo DATABSE UPDATED !
+
+
+else
+    echo  CANT CONNECT TO GREAT FIKRI. CHECK INTERNET CONNECTION !!!!
+fi
+exit
+
+
+    
