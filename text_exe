@@ -1,5 +1,21 @@
-	echo UPDATING DATABASE..................
+	
 
-mysql -u adminxEHGgZ3 -pAtZzr53yunKd great < /var/lib/openshift/543953795973ca3e770001b7/app-root/runtime/repo/great.sql
-echo DATABSE UPDATED !
+echo CONNECTING DATABASE..
+
+mysql -u adminxEHGgZ3 -pAtZzr53yunKd
+if [ $? -eq 0 ]; then
+    echo CONNECTED !
+else
+    echo  !
+fi
+
+
+#mysql -u adminxEHGgZ3 -pAtZzr53yunKd great < /var/lib/openshift/543953795973ca3e770001b7/app-root/runtime/repo/great.sql
+some_command
+if [ $? -eq 0 ]; then
+    echo DATABSE UPDATED !
+else
+    echo DATABSE UPDATE FAILED !
+fi
+
 
