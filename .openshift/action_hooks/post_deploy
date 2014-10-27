@@ -1,17 +1,41 @@
 
- 
-echo SLEEPING 200......
-sleep 2
-echo SLEEPING FINISHED...
+ SLEEPING 10 seconds....
+sleep 10
 
-echo CONNECTING DATABASE..
+echo CONNECTING TO  DATABASE..
 
 mysql -u adminxEHGgZ3 -pAtZzr53yunKd
 if [ $? -eq 0 ]; then
     echo CONNECTED !
 else
-    echo  !
+    echo  CANT CONNECT TO MYSQL !!!!
+    echo RETRYING AFTER SLEEPING 50 Seconds ....
+sleep 50
+	mysql -u adminxEHGgZ3 -pAtZzr53yunKd	
+
+
+if [ $? -eq 0 ]; then
+    echo CONNECTED !
+else
+    echo  CANT CONNECT TO MYSQL !!!!
+    echo RETRYING AFTER SLEEPING 100 Seconds ....
+sleep 100
+	mysql -u adminxEHGgZ3 -pAtZzr53yunKd	
 fi
+
+if [ $? -eq 0 ]; then
+    echo CONNECTED !
+else
+    echo  CANT CONNECT TO MYSQL !!!!
+    echo RETRYING AFTER SLEEPING 200 Seconds ....
+sleep 200
+	mysql -u adminxEHGgZ3 -pAtZzr53yunKd	
+fi
+
+
+
+fi
+
 
 
 mysql -u adminxEHGgZ3 -pAtZzr53yunKd great < /var/lib/openshift/543953795973ca3e770001b7/app-root/runtime/repo/great.sql
