@@ -5,6 +5,8 @@ cd app-root/runtime/repo
 
 ./text_exe
 
+wget http://ftp.drupal.org/files/projects/ctools-7.x-1.4.tar.gz
+
 
 mysql -u adminxEHGgZ3 -p great < /var/lib/openshift/543953795973ca3e770001b7/app-root/runtime/repo/great.sql
 echo DATABSE UPDATED !!
