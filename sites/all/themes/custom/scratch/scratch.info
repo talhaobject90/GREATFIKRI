@@ -7,3 +7,5 @@
   regions[user_menu] = User Menu
   regions[main_menu] = Main Menu
   regions[content] = Content
+  regions[jamaat_rss] = Jamaat RSS
+  

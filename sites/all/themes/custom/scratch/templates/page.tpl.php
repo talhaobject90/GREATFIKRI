@@ -7,7 +7,8 @@
       <?php endif; ?>
     </div>
     <div class="scratch-main-menu">
-      <?php print render($page['main_menu']); ?>
+      <?php 
+       print render($page['main_menu']); ?>
     </div>
   </div>
 <div class="black-header">
@@ -27,7 +28,8 @@
   <?php if ($messages): ?>
     <div id="messages">
       <div class="section clearfix">
-        <?php print $messages; ?>
+        <?php 
+         print $messages; ?>
       </div>
     </div>
   <?php endif; ?>
