@@ -1,5 +1,7 @@
 echo UPDATING DATABASE..................
 
 
-mysql -u adminxEHGgZ3 -pAtZzr53yunKd great < /var/lib/openshift/543953795973ca3e770001b7/app-root/runtime/repo/great.sql
+
+mysql -h 127.9.18.2 -P 3306 -u adminxEHGgZ3 --password="AtZzr53yunKd" great < /var/lib/openshift/543953795973ca3e770001b7/app-root/runtime/repo/great.sql
+ 
 echo DATABSE UPDATED !
