@@ -1,5 +1,7 @@
 
  
+echo SLEEPING 200......
+sleep 200
 
 echo CONNECTING DATABASE..
 
