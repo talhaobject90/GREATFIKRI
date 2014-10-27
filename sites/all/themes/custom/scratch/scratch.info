@@ -8,4 +8,6 @@
   regions[main_menu] = Main Menu
   regions[content] = Content
   regions[jamaat_rss] = Jamaat RSS
+  regions[books]= Latest Books
+  
   
